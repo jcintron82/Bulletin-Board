@@ -1,0 +1,17 @@
+//- extends layout
+
+//- block content
+//-   h1= title
+//-   p #{subtitle}
+
+
+doctype html 
+html 
+    head
+      title Message Board
+    body
+    p #{title} <button>New Message </button>
+    - const name = {subtitle}
+    each value in name
+      ul
+       li= value

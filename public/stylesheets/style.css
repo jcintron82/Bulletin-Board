@@ -22,3 +22,21 @@ input {
   border-color: black;
   border-style: solid;
 }
+
+.f {
+  display: flex;
+  flex-direction: column;
+  width:50vw;
+}
+
+.homePagePosts {
+  color: red;
+}
+
+.ul {
+  white-space: pre;
+}
+.li {
+  white-space: pre;
+  color: red;
+}

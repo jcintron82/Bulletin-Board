@@ -9,9 +9,16 @@ doctype html
 html 
     head
       title Message Board
+      link(rel='stylesheet', href='../public/stylesheets/style.css', type='text/css')
     body
     p #{title} <button ><a href='./new'>New</a> </button>
-    - const name = {subtitle}
-    each value in name
-      ul
-       li= value
+  
+       <ul>
+        each message in subtitle
+          <div class='homePagePosts'>
+            li= message.user
+            li= message.text
+            li= message.added
+              </div>
+      
+      

@@ -3,16 +3,7 @@ var router = express.Router();
 
 
 const messages = [
-  {
-    text: "Hi there!",
-    user: "Amanfedfefdo",
-    added: new Date().toDateString()
-  },
-  {
-    text: "Heleeelo World!",
-    user: "Charles",
-    added: new Date().toDateString()
-  },
+
 ];
 
 
@@ -22,7 +13,7 @@ const formattedSubtitle =  JSON.stringify(messages,null, 2).replaceAll('"','')
 /* GET home page. */
 router.get('/', function(req, res, next) {
   console.log('k')
-  res.render('index', { title: 'Welcome', subtitle: messages});
+  res.render('index', { title: 'Bulletin Board', subtitle: messages});
 });
 
 
@@ -35,9 +26,9 @@ router.get('/new', function(req, res, next) {
 router.post('/new',(req, res) => {
   const name = req.body.name;
   const message = req.body.message;
-  messages.push({user:name, text:message, date:new Date().toDateString()})
+  messages.push({user:name, text:message, added:new Date().toDateString()})
 
   res.redirect('/')
 })
-
+// messages.splice(0)
 module.exports = router;

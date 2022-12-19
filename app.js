@@ -3,11 +3,6 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-const livereload = require("livereload");
-
-
-const liveReloadServer = livereload.createServer();
-liveReloadServer.watch(path.join(__dirname, 'public'));
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -48,9 +43,6 @@ app.use(function(err, req, res, next) {
 });
 
 
-const connectLivereload = require("connect-livereload");
 
-
-app.use(connectLivereload());
 
 module.exports = app;

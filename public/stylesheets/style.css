@@ -1,19 +1,57 @@
+html
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 body {
   font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
-  font-size: 2em;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+ width: 100vw;
 }
 
 form {
   display: flex;
   flex-direction: column;
 }
-a {
-  color: #00B7FF;
+
+.headerWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem;
+  align-self: center;
+  font-size: .6em;
 }
+.newMsgBtn {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  height: 5rem;
+  font-size: 1em;
+}
+
+.newMsgBtn:hover {
+  background-color: lightcoral;
+}
+
 
 .x {
   font-size: 1em ;
@@ -32,24 +70,66 @@ input {
   flex-direction: column;
   width:50vw;
 }
+.postsWrapper {
+  width: 200vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 
+
+}
 .homePagePosts {
+  display:flex;
+  flex-direction: column;
   border-style: solid;
   border-color: black;
-  padding: 4rem 2.5rem;
-  margin:2.5rem;
-
+  margin: 1rem 0;
+  padding: 0 .45rem;
+  width: 80vw;
+  max-width: 40rem;
+  align-self: center;
 }
 
-ul {
-  white-space: pre;
-  list-style: none;
-  width: 50%;
-  max-width: 80rem;
+.userDiv{
+  word-wrap: break-word;
+  color: red;
+  font-size: 1.5em;
 }
-li {
-  white-space: pre;
-  border-style: none none solid;
-  border-color: black;
-  padding-top: .55rem;
+
+.messageDiv{
+  font-size: 1em;
+  word-wrap: break-word
 }
+.dateDiv{
+  font-size: .75em;
+}
+
+@media(max-width:468px) {
+  .postsWrapper {
+    width: 100%;
+  }
+}
+@media (min-width:768px) {
+  .userDiv{
+    color: red;
+    font-size: 3em;
+  }
+  
+  .messageDiv{
+    font-size: 1em;
+  }
+  .dateDiv{
+    font-size: 3em;
+  }
+  .newMsgBtn {
+    font-size: 5em;
+  }
+} 
+
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+ */

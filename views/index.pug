@@ -8,18 +8,30 @@
 doctype html 
 html 
     head
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge')
+      meta(name='description', content='Some description')
+      meta(name='viewport', content='width=device-width, initial-scale=1')
       title Message Board
       style 
         include ../public/stylesheets/style.css
+    </head>
     body
-    p #{title} <button ><a href='./new'>New</a> </button>
-  
-       <ul >
-        each message in subtitle
-          .homePagePosts
-            li= 'User: ' + message.user
-            li= 'Message: ' + message.text
-            li= 'Date: ' + message.added
-              </div>
+        <header .headerWrap>
+          h1 #{title}
+          h2 Welcome to the dev bulletin board! Post your recent thoughts on tech stacks, the job market or just general web development stuff here!
+          a(class='newMsgBtn' href='/new') New 
+        </header> 
+        
+          each message in subtitle
+            .homePagePosts
+              .userDiv
+                h3= 'User: ' + message.user 
+              .messageDiv
+                p= 'Message: ' + message.text
+              .dateDiv 
+                h6= 'Date: ' + message.added
+                </div>
+        
       
       

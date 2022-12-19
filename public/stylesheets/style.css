@@ -1,6 +1,10 @@
 body {
   font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
   font-size: 2em;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
 form {
@@ -30,13 +34,22 @@ input {
 }
 
 .homePagePosts {
-  color: red;
+  border-style: solid;
+  border-color: black;
+  padding: 4rem 2.5rem;
+  margin:2.5rem;
+
 }
 
-.ul {
+ul {
   white-space: pre;
+  list-style: none;
+  width: 50%;
+  max-width: 80rem;
 }
-.li {
+li {
   white-space: pre;
-  color: red;
+  border-style: none none solid;
+  border-color: black;
+  padding-top: .55rem;
 }

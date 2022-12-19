@@ -9,16 +9,17 @@ doctype html
 html 
     head
       title Message Board
-      link(rel='stylesheet', href='../public/stylesheets/style.css', type='text/css')
+      style 
+        include ../public/stylesheets/style.css
     body
     p #{title} <button ><a href='./new'>New</a> </button>
   
-       <ul>
+       <ul >
         each message in subtitle
-          <div class='homePagePosts'>
-            li= message.user
-            li= message.text
-            li= message.added
+          .homePagePosts
+            li= 'User: ' + message.user
+            li= 'Message: ' + message.text
+            li= 'Date: ' + message.added
               </div>
       
       

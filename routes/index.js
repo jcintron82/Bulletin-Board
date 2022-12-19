@@ -5,13 +5,13 @@ var router = express.Router();
 const messages = [
   {
     text: "Hi there!",
-    user: "Amando",
-    added: new Date(),
+    user: "Amanfedfefdo",
+    added: new Date().toDateString()
   },
   {
-    text: "Hello World!",
+    text: "Heleeelo World!",
     user: "Charles",
-    added: new Date(),
+    added: new Date().toDateString()
   },
 ];
 
@@ -35,7 +35,7 @@ router.get('/new', function(req, res, next) {
 router.post('/new',(req, res) => {
   const name = req.body.name;
   const message = req.body.message;
-  messages.push({user:name, text:message, date: new Date()})
+  messages.push({user:name, text:message, date:new Date().toDateString()})
 
   res.redirect('/')
 })

@@ -5,6 +5,9 @@ html
       meta(http-equiv='X-UA-Compatible', content='IE=edge')
       meta(name='description', content='Some description')
       meta(name='viewport', content='width=device-width, initial-scale=1')
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
       title Message Board
       style 
         include ../public/stylesheets/formstyle.css
@@ -16,7 +19,7 @@ html
             <input required type='text' minlength=2 name='name' maxlength=25 placeholder='Name'>
         </label>
         <label>
-            <textarea class='textareaInput' placeholder='Message' required  minlength=2 maxlength=600 name='message' >
+            <textarea class='textareaInput' placeholder='Message...' required  minlength=2 maxlength=600 name='message' >
             </textarea>
         </label>
         <button type="submit" class='submitBtn'>Submit</button>

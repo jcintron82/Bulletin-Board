@@ -6,7 +6,7 @@
   },
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "node ./api/index.js",
     "devstart": "nodemon ./bin/www",
     "serverstart": "DEBUG=bulletinboard:* npm run devstart"
   },

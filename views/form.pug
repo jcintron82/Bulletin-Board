@@ -1,25 +1,25 @@
 doctype html 
-html
-head 
-    style
-        include ../public/stylesheets/style.css
+html 
+    head
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge')
+      meta(name='description', content='Some description')
+      meta(name='viewport', content='width=device-width, initial-scale=1')
+      title Message Board
+      style 
+        include ../public/stylesheets/formstyle.css
     title New Post
 
-body
-    <form method="POST" action"/new">
-        <label class='x'>
-            <input type='text' name='name'>Name
+<body class='formPageBody'>
+    <form class='newMsgForm' method="POST" action"/new">
+        <label>
+            <input required type='text' minlength=2 name='name' maxlength=25 placeholder='Name'>
         </label>
-
-
-            <label class='x'>
-        <input type='text' name='message'>Message
+        <label>
+            <textarea class='textareaInput' placeholder='Message' required  minlength=2 maxlength=600 name='message' >
+            </textarea>
         </label>
-
-
-        <label >
-            <input name='date'>Date
-        </label>
-        <button type="submit">#{title}</button>
+        <button type="submit" class='submitBtn'>Submit</button>
     </form>
+</body>
       

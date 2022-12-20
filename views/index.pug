@@ -17,21 +17,19 @@ html
         include ../public/stylesheets/style.css
     </head>
     body
-        <header .headerWrap>
+        <header class='headerWrap'>
           h1 #{title}
-          h2 Welcome to the dev bulletin board! Post your recent thoughts on tech stacks, the job market or just general web development stuff here!
+          <h2 class='welcomeMsgWrap'> Welcome to the dev bulletin board!<br> Post your recent thoughts on tech stacks, the job market or just general web development stuff here!</h2>
           a(class='newMsgBtn' href='/new') New 
         </header> 
-        
+        <section class='postsWrap'>
           each message in subtitle
-            .homePagePosts
-              .userDiv
-                h3= 'User: ' + message.user 
-              .messageDiv
-                p= 'Message: ' + message.text
-              .dateDiv 
-                h6= 'Date: ' + message.added
-                </div>
+            <div class='homePagePosts'>            
+              <h3 class='userDiv'> User:<br> #{message.user}</h3>
+              <h3 class='messageDiv'> Message: <p>#{message.text}</p></h3>
+              <h4 class='dateDiv'> Date:<br> #{message.added}</h4>
+            </div>
+        </section>
         
       
       

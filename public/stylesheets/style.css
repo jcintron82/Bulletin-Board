@@ -14,7 +14,9 @@ body {
   justify-content: center;
  width: 100vw;
 }
-
+p {
+  font-weight: lighter;
+}
 form {
   display: flex;
   flex-direction: column;
@@ -47,8 +49,9 @@ form {
   justify-content: center;
   align-items: center;
   width: 35%;
-  height: 5rem;
-  font-size: 1em;
+  max-width:10rem;
+  height: 2.5rem;
+  font-size: 1.75em;
 }
 
 .newMsgBtn:hover {
@@ -68,13 +71,9 @@ input {
   border-style: solid;
 }
 
-.f {
-  display: flex;
-  flex-direction: column;
-  width:50vw;
-}
-.postsWrapper {
-  width: 200vw;
+
+.postsWrap {
+  max-width: 80rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -96,12 +95,11 @@ input {
 
 .userDiv{
   word-wrap: break-word;
-  color: red;
   font-size: 1.5em;
 }
 
 .messageDiv{
-  font-size: 1em;
+  font-size: .8em;
   word-wrap: break-word
 }
 .dateDiv{
@@ -115,18 +113,17 @@ input {
 }
 @media (min-width:768px) {
   .userDiv{
-    color: red;
-    font-size: 3em;
+    font-size: 2em;
   }
   
   .messageDiv{
-    font-size: 1em;
+    font-size: 1.2em;
   }
   .dateDiv{
-    font-size: 3em;
+    font-size: 1.25em;
   }
   .newMsgBtn {
-    font-size: 5em;
+    font-size: 3em;
   }
 } 
 

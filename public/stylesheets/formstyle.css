@@ -1,0 +1,40 @@
+.formPageBody {
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.newMsgForm{
+    height: 30rem;
+    padding: 0 5vw;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+  input[type=text] {
+    height: 5vh;
+    width: 60vw;
+    max-width: 15rem;
+    padding: .25rem;
+    border-color: black;
+    border-style: solid;
+  }
+.textareaInput {
+    margin-top: .5rem;
+    padding: .5rem;
+    width: 75vw;
+    max-width: 30rem;
+    height: 300px;
+}
+.submitBtn {
+    align-self: flex-end;
+    margin:.25rem;
+}
+
+  

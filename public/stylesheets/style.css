@@ -1,50 +1,47 @@
-html
-{
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+html {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
-
 body {
   font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
- width: 100vw;
+  width: 100vw;
 }
 p {
   font-weight: lighter;
+  font-size: 1.25em;
+  font-family: 'Montserrat', sans-serif;
+  margin:0;
+  word-wrap: break-word;
 }
-form {
-  display: flex;
-  flex-direction: column;
-}
-
 .headerWrap {
   display: flex;
   flex-direction: column;
-
-  margin: 2.5rem;
+  margin: 0 2.5rem 2.5rem;
   align-self: center;
   font-size: .6em;
   width: 100%;
 }
 .welcomeMsgWrap {
-  width: 80%;
+  width: 90vw;
+  max-width:25rem;
+  font-family: 'Montserrat', sans-serif;
 }
 .newMsgBtn {
   font: bold 11px Arial;
   text-decoration: none;
-  background-color: #EEEEEE;
-  color: #333333;
+  background-color:#345678;
+  color: White;
   padding: 2px 6px 2px 6px;
   border-top: 1px solid #CCCCCC;
   border-right: 1px solid #333333;
   border-bottom: 1px solid #333333;
   border-left: 1px solid #CCCCCC;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,84 +49,91 @@ form {
   max-width:10rem;
   height: 2.5rem;
   font-size: 1.75em;
+  border-radius: 10px;
+  letter-spacing: .65px;
+  font-family: 'Montserrat', sans-serif;
 }
-
-.newMsgBtn:hover {
-  background-color: lightcoral;
-}
-
-
-.x {
-  font-size: 1em ;
-  color: red;
-}
-
-input {
-  height: 10vh;
-  width: 50vw;
-  border-color: black;
-  border-style: solid;
-}
-
-
 .postsWrap {
   max-width: 80rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-
-
 }
 .homePagePosts {
   display:flex;
   flex-direction: column;
-  border-style: solid;
-  border-color: black;
   margin: 1rem 0;
-  padding: 0 .45rem;
+  padding: .5rem 1rem 1rem;
   width: 80vw;
   max-width: 40rem;
   align-self: center;
+  border-style: solid;
+  border-color: #93867F;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 4px 4px 6px 1px #6B6761;
 }
-
+.nameDiv{
+  width: 90% 
+}
 .userDiv{
   word-wrap: break-word;
-  font-size: 1.5em;
+  font-size: 1em;
+  margin-bottom: 0;
+  border-style: none none solid;
+  width: 40vw;
+  max-width: 3.5rem;
+  border-width: 2px;
+  border-color: #93867F;
+  margin-bottom: .75rem;
 }
-
 .messageDiv{
-  font-size: .8em;
-  word-wrap: break-word
+  font-size: 1em;
+  word-wrap: break-word;
+  border-style: none none solid;
+  width: 40vw;
+  max-width: 6rem;
+  border-width: 2px;
+  border-color: #93867F;
+  margin-bottom: .75rem;
 }
 .dateDiv{
-  font-size: .75em;
+  font-size: 1em;
+  margin-bottom: .25rem;
+  width: 40vw;
+  max-width: 4rem;
+  border-width: 2px;
+  border-style: none none solid;
+  border-color: #93867F;
+  margin-bottom: .75rem;
 }
-
 @media(max-width:468px) {
   .postsWrapper {
-    width: 100%;
-  }
+      width: 100%;
+ }
 }
 @media (min-width:768px) {
-  .userDiv{
-    font-size: 2em;
-  }
-  
   .messageDiv{
-    font-size: 1.2em;
-  }
+      font-size: 1.2em;
+ }
   .dateDiv{
-    font-size: 1.25em;
-  }
+      font-size: 1.25em;
+ }
   .newMsgBtn {
-    font-size: 3em;
-  }
-} 
-
-/* * {
-  background: #000 !important;
-  color: #0f0 !important;
-  outline: solid #f00 1px !important;
+      font-size: 2em;
+ }
+  p {
+      font-size: 1em;
+ }
 }
- */
+@media(min-width:1024px) {
+  .newMsgBtn:hover {
+      cursor: pointer;
+      opacity:.8 
+ }
+  .newMsgBtn:active{
+      background-color: #6B6761 ;
+ }
+}
+

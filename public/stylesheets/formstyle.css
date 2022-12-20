@@ -1,12 +1,10 @@
 .formPageBody {
-    background-color:  white ;
+    background-color: white ;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
 }
-
 .newMsgForm{
     height: 30rem;
     padding: 0 5vw;
@@ -20,8 +18,7 @@
     justify-content: center;
     box-shadow: 4px 4px 6px 1px #6B6761;
 }
-
-  input[type=text] {
+input[type=text] {
     height: 5vh;
     width: 60vw;
     max-width: 15rem;
@@ -33,9 +30,9 @@
     margin-bottom: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-  }
-.textareaInput {s
-    padding: .5rem;
+}
+.textareaInput {
+   s padding: .5rem;
     width: 75vw;
     max-width: 30rem;
     height: 15rem;
@@ -44,7 +41,7 @@
     border-width: 2px;
     border-color: #93867F;
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: .65px
+    letter-spacing: .65px 
 }
 .submitBtn {
     align-self: flex-end;
@@ -56,16 +53,12 @@
     border-radius: 10px;
     letter-spacing: .65px;
     font-family: 'Montserrat', sans-serif;
-
 }
-
 .submitBtn:active{
-   opacity: .5;
+    opacity: .5;
 }
 @media(min-width:1024px) {
     .submitBtn:hover {
         cursor: pointer;
-    }
+   }
 }
-
-  

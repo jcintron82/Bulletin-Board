@@ -17,7 +17,6 @@ app.set('view engine', 'pug');
 // app.get('/',(req, res) => {
 //   res.render('index', {title:'Hi'})
 // })
-
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

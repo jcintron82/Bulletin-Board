@@ -43,8 +43,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.listen(PORT,'0.0.0.0', () => {
-  console.log(`server started on port ${PORT}`, app.url);
+app.listen(PORT, () => {
+  console.log(`server started on port ${PORT}`);
 });
 
 

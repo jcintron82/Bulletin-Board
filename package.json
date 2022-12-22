@@ -1,12 +1,9 @@
 {
   "name": "bulletinboard",
   "version": "0.0.0",
-  "engines": {
-    "node": "18.6.0"
-  },
   "private": true,
   "scripts": {
-    "start": "node ./api/index.js",
+    "start": "node ./bin/www",
     "devstart": "nodemon ./bin/www",
     "serverstart": "DEBUG=bulletinboard:* npm run devstart"
   },

@@ -43,5 +43,13 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+//Uncomment these when working in the dev server
+//Comment them before deploying any changes again
+
+// const PORT = 10000;
+// app.listen(PORT, () => {
+//   console.log(`server started on port ${PORT}`);
+// });
+
 
 module.exports = app;

@@ -3,7 +3,7 @@ var router = express.Router();
 
 const messages = [
   {
-    text: "Hi there! and welcome to my bulletin board project! This project was created as a way to further my working knowledge with Express and what it means to create a full stack application. The backend is a Node server utilizing the Express framework and the front-end is standard CSS, using pug as the templating engine. If you'd like to read more on this project, the source code can be found here: https://github.com/jcintron82/Bulletin-Board; don't forget to post a message before you go! ",
+    text: "Hi there, and welcome to my bulletin board project! This project was created as a way to further my working knowledge with Express and what it means to create a full stack application. The backend is a Node server utilizing the Express framework and the front-end is standard CSS, using pug as the templating engine. If you'd like to read more on this project, the source code can be found here: https://github.com/jcintron82/Bulletin-Board; don't forget to post a message before you go! ",
     user: "Juan Cintron",
   },
 ];

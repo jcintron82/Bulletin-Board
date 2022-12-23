@@ -7,7 +7,6 @@ const messages = [
     user: "Juan Cintron",
   },
 ];
-
 /* GET home page. */
 router.get("/", function (req, res, next) {
   console.log("k");

@@ -1,20 +1,25 @@
-# Bulletin-Board
+**Bulletin Board**
 
-A bulletin board application created using Node.js, Express, JavaScript and CSS with Pug as the templating engine. 
+A Bulletin Board which allows users to post personalized messages to the home screen featuring a name, message and live timestamp of the posting.
 
-Live Site: https://bulletin-board.onrender.com/
+**Link to project:** https://bulletin-board.onrender.com/
 
 ![bbss](https://user-images.githubusercontent.com/71289948/209225889-83789dca-9bf7-427e-930b-e0d4f4ecc7d4.JPG)
 
-<b>The Why</b>
+**How It's Made:**
+Tech used: HTML, CSS, JavaScript, Node.js, Express, Pug
 
-> My reasoning behind making this project ultimately was to test and implement what I had recently learned in regards to Node and Express. As a developer, I felt comfortable enough around the Front-End to spin up a UI or similar but noticed some huge holes in my projects; namely data storage and API key security. This is what led me down the road to learning Node and Express and eventually, to creating this project. 
+The application skeleton was spun up via express-generator and features a form which captures user inputted data on submit. The data is saved in an an array which is parved via forEach(), returning each rendered item. The applicaiton is fully mobile responsive. 
+
+**Lessons Learned:**
+The importance of pre code planning. During this project I found that having planned out the flow of the site beforehand would've helped my workflow greatly in making the app. 
+
+**Examples:**
+Take a look at these other examples of my work below:
+
+**Inventory Management System -** 
+https://github.com/jcintron82/Inventory-SystemIn: https://github.com/jcintron82/Inventory-System
 
 
-<b>The How</b>
-
-> As stated, this project was created using Node.js, Express, JavaScript and CSS with Pug as the templating engine. The skeleton of the app was spun up via the Express-Generator command and there are no CSS libraries on the front-end. 
-
-<b>The What</b>
-
-> What I learned from this project? A lot! Besides the obvious stuff that comes with learning a new technology or framework, I learned the importance of really planning out the design of an application in a detailed manner. Before this, working on only front-end focused projects, I *would* plan but it definitely could've used more detail. I found that during this project (mainly in importing to my templating engine), planning a detailed architechture of the file(s) before jumping into it would've helped immensely at some parts. 
+**Magnolia Marketplace**
+https://github.com/jcintron82/Magnolia-Marketplace
